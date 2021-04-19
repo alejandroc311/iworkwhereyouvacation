@@ -1,9 +1,23 @@
 $(document).ready(function(){
-  $('.jumbo-slick').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows:true,
-    dots:true
-  });
+    var day;
+    $(".jumbo-slick").slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    });
+    $(".slick-carousel").slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true
+    });
+    $(".calendarContainer .row .col .btn").each(function(index){
+      day = index + 1;
+      $(this).attr('id', "april-"+day);
+      $(this).click(function(){
+        alert("The day you pressed was: "+$(this).attr('id').replace(/\D/g, ""));
+      });
+
+    });
 });

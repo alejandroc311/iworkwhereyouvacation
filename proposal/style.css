@@ -32,4 +32,15 @@
   width:23%;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+
+}
+.calendarSpinner{
+  position: absolute;
+  padding-top: 5rem;
+
+}
+
+.card p{
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
